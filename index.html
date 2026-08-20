@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO META TAGS — Edit sesuai data dirimu ===== -->
+  <title>Pandu Arya Wiguna — Portfolio Pribadi</title>
+  <meta name="description" content="Portfolio pribadi Pandu Arya Wiguna, siswa SMA Negeri 1 Temon yang tertarik pada pengembangan web, UI/UX, dan teknologi. Lihat karya, keterampilan, dan pengalaman saya." />
+  <meta name="keywords" content="Pandu Arya Wiguna, portfolio, web developer, siswa SMA, UI UX, frontend developer" />
+  <meta name="author" content="Pandu Arya Wiguna" />
+  <meta name="theme-color" content="#0F172A" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pandu Arya Wiguna — Portfolio Pribadi" />
+  <meta property="og:description" content="Portfolio pribadi Pandu Arya Wiguna — profil, keterampilan, pengalaman, dan hasil karya." />
+  <meta property="og:image" content="assets/images/profile.svg" />
+  <meta property="og:locale" content="id_ID" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pandu Arya Wiguna — Portfolio Pribadi" />
+  <meta name="twitter:description" content="Portfolio pribadi Pandu Arya Wiguna — profil, keterampilan, pengalaman, dan hasil karya." />
+  <meta name="twitter:image" content="assets/images/profile.svg" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Scroll progress indicator -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container" aria-label="Navigasi utama">
+      <a href="#home" class="logo">
+        <span class="logo-mark">PA</span>
+        <span class="logo-text">Pandu<span class="dot">.</span>Arya</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active-link" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#portfolio" class="nav-link" data-section="portfolio">Portfolio</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#contact" class="nav-link nav-cta" data-section="contact">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="grain"></div>
+      </div>
+
+      <div class="hero-container">
+        <div class="hero-text" data-reveal>
+          <p class="eyebrow"><span class="terminal-dot"></span>// halo, perkenalkan saya</p>
+          <h1 class="hero-name">Pandu Arya<br /><span class="gradient-text">Wiguna</span></h1>
+          <p class="hero-role">
+            <span id="typewriter"></span><span class="cursor" aria-hidden="true">|</span>
+          </p>
+          <p class="hero-desc">
+            Siswa SMA Negeri 1 Temon yang antusias pada dunia pengembangan web dan desain antarmuka.
+            Suka belajar hal baru, membangun proyek kecil-kecilan, dan mengubah ide menjadi tampilan
+            yang rapi dan enak digunakan.
+          </p>
+          <div class="hero-actions">
+            <a href="#portfolio" class="btn btn-primary">
+              <span>Lihat Portfolio</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+          </div>
+
+          <div class="hero-socials" aria-label="Tautan media sosial">
+            <a href="https://github.com/username" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://instagram.com/username" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/6280000000000" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal>
+          <div class="avatar-frame">
+            <img src="assets/images/profile.svg" alt="Foto profil Pandu Arya Wiguna" class="avatar-img" width="600" height="720" />
+            <span class="badge-float badge-1"><i class="fa-brands fa-react"></i> React</span>
+            <span class="badge-float badge-2"><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span class="badge-float badge-3"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            <span class="badge-float badge-4"><i class="fa-brands fa-js"></i> JS</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Gulir ke bawah">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about">
+      <div class="section-container about-grid">
+        <div class="about-img-wrap" data-reveal>
+          <img src="assets/images/profile.svg" alt="Foto Pandu Arya Wiguna sedang belajar" class="about-img" width="600" height="720" loading="lazy" />
+          <div class="about-stat-card">
+            <span class="stat-number">1+</span>
+            <span class="stat-label">Tahun Belajar<br />Web Development</span>
+          </div>
+        </div>
+
+        <div class="about-content" data-reveal>
+          <p class="eyebrow">tentang saya</p>
+          <h2 class="section-title">Mengenal Lebih Dekat</h2>
+          <p class="about-text">
+            Perkenalkan, saya <strong>Pandu Arya Wiguna</strong>, saat ini menempuh pendidikan di
+            <strong>SMA Negeri 1 Temon</strong>. Ketertarikan saya pada dunia teknologi bermula dari
+            rasa penasaran tentang bagaimana sebuah website bekerja, yang kemudian berkembang menjadi
+            kebiasaan belajar coding secara mandiri di waktu luang.
+          </p>
+          <p class="about-text">
+            Saya senang mengeksplorasi <strong>HTML, CSS, JavaScript</strong>, dan mulai mendalami
+            <strong>React</strong> untuk membangun antarmuka yang interaktif. Selain coding, saya juga
+            tertarik dengan <strong>UI/UX Design</strong> — bagaimana membuat sebuah produk digital
+            tidak hanya berfungsi dengan baik, tapi juga nyaman dan menyenangkan untuk digunakan.
+          </p>
+          <p class="about-text">
+            Tujuan saya ke depan adalah terus mengasah kemampuan di bidang pengembangan web,
+            berkontribusi pada proyek-proyek nyata, dan pada akhirnya melanjutkan pendidikan di
+            bidang <strong>Informatika / Ilmu Komputer</strong> untuk menjadi seorang developer profesional.
+          </p>
+
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-label">Nama</span>
+              <span class="info-value">Pandu Arya Wiguna</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Sekolah</span>
+              <span class="info-value">SMA Negeri 1 Temon</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Email</span>
+              <span class="info-value">nama@email.com</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Domisili</span>
+              <span class="info-value">Kulon Progo, Yogyakarta</span>
+            </div>
+          </div>
+
+          <a href="assets/CV-Pandu-Arya-Wiguna.pdf" download class="btn btn-primary">
+            <i class="fa-solid fa-download" aria-hidden="true"></i>
+            <span>Download CV</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section section-alt" id="skills">
+      <div class="section-container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow center">kemampuan</p>
+          <h2 class="section-title center">Skills &amp; Keahlian</h2>
+          <p class="section-sub center">
+            Beberapa teknologi dan tools yang sedang saya pelajari dan gunakan untuk membangun proyek.
+          </p>
+        </div>
+
+        <div class="skills-grid" data-reveal>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="--icon-color:#E34F26"><i class="fa-brands fa-html5"></i></div>
+            <h3 class="skill-name">HTML</h3>
+            <div class="skill-bar"><div class="skill-bar-fill" data-percent="90" style="--bar-color:#E34F26"></div></div>
+            <span class="skill-percent">90%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="--icon-color:#264DE4"><i class="fa-brands fa-css3-alt"></i></div>
+            <h3 class="skill-name">CSS</h3>
+            <div class="skill-bar"><div class="skill-bar-fill" data-percent="85" style="--bar-color:#264DE4"></div></div>
+            <span class="skill-percent">85%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="--icon-color:#F7DF1E"><i class="fa-brands fa-js"></i></div>
+            <h3 class="skill-name">JavaScript</h3>
+            <div class="skill-bar"><div class="skill-bar-fill" data-percent="75" style="--bar-color:#F7DF1E"></div></div>
+            <span class="skill-percent">75%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="--icon-color:#61DAFB"><i class="fa-brands fa-react"></i></div>
+            <h3 class="skill-name">React</h3>
+            <div class="skill-bar"><div class="skill-bar-fill" data-percent="60" style="--bar-color:#61DAFB"></div></div>
+            <span class="skill-percent">60%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="--icon-color:#8B5CF6"><i class="fa-solid fa-pen-ruler"></i></div>
+            <h3 class="skill-name">UI/UX</h3>
+            <div class="skill-bar"><div class="skill-bar-fill" data-percent="70" style="--bar-color:#8B5CF6"></div></div>
+            <span class="skill-percent">70%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="--icon-color:#38BDF8"><i class="fa-brands fa-git-alt"></i></div>
+            <h3 class="skill-name">Git &amp; GitHub</h3>
+            <div class="skill-bar"><div class="skill-bar-fill" data-percent="65" style="--bar-color:#38BDF8"></div></div>
+            <span class="skill-percent">65%</span>
+          </div>
+
+        </div>
+        <!-- Ingin menambah skill? Salin satu blok .skill-card lalu ganti icon, nama, dan data-percent -->
+      </div>
+    </section>
+
+    <!-- ===================== PORTFOLIO ===================== -->
+    <section class="section" id="portfolio">
+      <div class="section-container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow center">hasil karya</p>
+          <h2 class="section-title center">Portfolio &amp; Projects</h2>
+          <p class="section-sub center">
+            Beberapa contoh proyek. Ganti gambar, judul, deskripsi, dan tautan sesuai proyek aslimu.
+          </p>
+        </div>
+
+        <div class="portfolio-grid" data-reveal>
+
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <img src="assets/images/project-1.svg" alt="Tampilan proyek E-Commerce UI Kit" loading="lazy" width="800" height="600" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">E-Commerce UI Kit</h3>
+              <p class="project-desc">Tampilan antarmuka toko online dengan halaman produk, keranjang belanja, dan checkout yang responsif.</p>
+              <div class="project-tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-link"><i class="fa-brands fa-github"></i> View Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <img src="assets/images/project-2.svg" alt="Tampilan proyek Task Manager App" loading="lazy" width="800" height="600" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Task Manager App</h3>
+              <p class="project-desc">Aplikasi pengelola tugas harian dengan fitur tambah, edit, hapus, dan tandai selesai.</p>
+              <div class="project-tech">
+                <span>React</span><span>Tailwind</span><span>LocalStorage</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-link"><i class="fa-brands fa-github"></i> View Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <img src="assets/images/project-3.svg" alt="Tampilan proyek Company Landing Page" loading="lazy" width="800" height="600" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Company Landing Page</h3>
+              <p class="project-desc">Landing page profil perusahaan lengkap dengan section layanan, testimoni, dan formulir kontak.</p>
+              <div class="project-tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-link"><i class="fa-brands fa-github"></i> View Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <img src="assets/images/project-4.svg" alt="Tampilan proyek Recipe Finder App" loading="lazy" width="800" height="600" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Recipe Finder App</h3>
+              <p class="project-desc">Aplikasi pencari resep masakan berdasarkan bahan yang tersedia, terhubung ke public API.</p>
+              <div class="project-tech">
+                <span>React</span><span>API</span><span>CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-link"><i class="fa-brands fa-github"></i> View Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <img src="assets/images/project-5.svg" alt="Tampilan proyek Weather Dashboard" loading="lazy" width="800" height="600" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Weather Dashboard</h3>
+              <p class="project-desc">Dashboard cuaca real-time dengan pencarian kota dan visualisasi suhu harian.</p>
+              <div class="project-tech">
+                <span>JavaScript</span><span>API</span><span>Chart.js</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-link"><i class="fa-brands fa-github"></i> View Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <img src="assets/images/project-6.svg" alt="Tampilan proyek Personal Blog Platform" loading="lazy" width="800" height="600" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Personal Blog Platform</h3>
+              <p class="project-desc">Platform blog pribadi sederhana untuk menulis dan membagikan artikel dengan tampilan minimalis.</p>
+              <div class="project-tech">
+                <span>React</span><span>Tailwind</span><span>Markdown</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-link"><i class="fa-brands fa-github"></i> View Code</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section section-alt" id="experience">
+      <div class="section-container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow center">perjalanan</p>
+          <h2 class="section-title center">Experience &amp; Organisasi</h2>
+          <p class="section-sub center">Rangkaian aktivitas dan pengalaman yang telah saya jalani.</p>
+        </div>
+
+        <div class="timeline" data-reveal>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2025 — Sekarang</span>
+              <h3 class="timeline-role">Anggota Ekstrakurikuler Informatika</h3>
+              <span class="timeline-org">SMA Negeri 1 Temon</span>
+              <p class="timeline-desc">Belajar dasar-dasar pemrograman web bersama teman-teman, serta membantu mengelola konten digital sekolah.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2024 — 2025</span>
+              <h3 class="timeline-role">Peserta Pelatihan Web Development</h3>
+              <span class="timeline-org">Pelatihan Online / Kursus Mandiri</span>
+              <p class="timeline-desc">Mengikuti kelas online HTML, CSS, dan JavaScript dasar, dilanjutkan dengan membangun beberapa proyek latihan.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2024</span>
+              <h3 class="timeline-role">Anggota OSIS — Divisi Media &amp; Informasi</h3>
+              <span class="timeline-org">SMA Negeri 1 Temon</span>
+              <p class="timeline-desc">Bertanggung jawab membuat konten publikasi kegiatan sekolah untuk media sosial dan mading digital.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2023</span>
+              <h3 class="timeline-role">Mulai Belajar Coding Secara Otodidak</h3>
+              <span class="timeline-org">Belajar Mandiri</span>
+              <p class="timeline-desc">Memulai perjalanan belajar pemrograman melalui tutorial YouTube dan dokumentasi resmi.</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- Tambah pengalaman baru: salin satu blok .timeline-item -->
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section" id="contact">
+      <div class="section-container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow center">hubungi saya</p>
+          <h2 class="section-title center">Mari Terhubung</h2>
+          <p class="section-sub center">
+            Punya pertanyaan, kolaborasi, atau sekadar ingin menyapa? Silakan kirim pesan.
+          </p>
+        </div>
+
+        <div class="contact-grid" data-reveal>
+
+          <div class="contact-info">
+            <a href="mailto:nama@email.com" class="contact-item">
+              <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+              <span>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">nama@email.com</span>
+              </span>
+            </a>
+            <a href="https://wa.me/6280000000000" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <span class="contact-icon"><i class="fa-brands fa-whatsapp"></i></span>
+              <span>
+                <span class="contact-label">WhatsApp</span>
+                <span class="contact-value">+62 800-0000-0000</span>
+              </span>
+            </a>
+            <a href="https://instagram.com/username" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <span class="contact-icon"><i class="fa-brands fa-instagram"></i></span>
+              <span>
+                <span class="contact-label">Instagram</span>
+                <span class="contact-value">@username</span>
+              </span>
+            </a>
+            <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <span class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+              <span>
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">/in/username</span>
+              </span>
+            </a>
+            <a href="https://github.com/username" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <span class="contact-icon"><i class="fa-brands fa-github"></i></span>
+              <span>
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/username</span>
+              </span>
+            </a>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" placeholder="Nama lengkap" required />
+                <span class="form-error" data-error-for="name"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="nama@email.com" required />
+                <span class="form-error" data-error-for="email"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Topik pesan" required />
+              <span class="form-error" data-error-for="subject"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tulis pesan kamu di sini..." required></textarea>
+              <span class="form-error" data-error-for="message"></span>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">
+              <span>Kirim Pesan</span>
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+            </button>
+            <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-mark">PA</span>
+          <span class="logo-text">Pandu<span class="dot">.</span>Arya</span>
+        </a>
+        <p class="footer-tagline">Siswa &amp; calon web developer — membangun karya, satu baris kode setiap hari.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Navigasi footer">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-socials" aria-label="Media sosial">
+        <a href="https://github.com/username" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://instagram.com/username" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/6280000000000" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Pandu Arya Wiguna. Seluruh hak cipta dilindungi.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
